@@ -8,7 +8,7 @@ if __name__ == '__main__':
             _, temp_f = read_temp()
             current_time = datetime.datetime.fromtimestamp(time.time())
             readable_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
-            print(f'{readable_time}; Temperature: {temp_f:.1f}°F')
+            print(f'{readable_time}; Temperature: {temp_f:.2f}°F')
             time.sleep(30)  
     except KeyboardInterrupt:
         pass
